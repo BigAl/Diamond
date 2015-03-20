@@ -97,8 +97,7 @@ class MemcachedCollector(diamond.collector.Collector):
     def get_stats(self, host, port):
         # stuff that's always ignored, aren't 'stats'
         ignored = ('libevent', 'pointer_size', 'time', 'version',
-                   'repcached_version', 'replication', 'accepting_conns',
-                   'pid')
+                   'repcached_version', 'replication', 'accepting_conns')
         pid = None
 
         stats = {}
